@@ -48,3 +48,11 @@ function executeWork(employee) {
     }
     return employee.workTeacherTasks();
 }
+function teachClass(todayClass) {
+    if (todayClass === "Math") {
+        return "Teaching Math";
+    }
+    else {
+        return "Teaching History";
+    }
+}
