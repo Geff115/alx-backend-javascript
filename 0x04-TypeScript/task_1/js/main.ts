@@ -43,3 +43,19 @@ function printTeacher (firstName: string, lastName: string): string {
   return `${firstName[0]}. ${lastName}`;
 }
 
+interface Student {
+  displayName(): string;
+  workOnHomeWork(): string;
+}
+
+class StudentClass implements Student {
+  constructor(public firstName: string, public lastName: string) {};
+
+  displayName(): string {
+    return this.firstName;
+  }
+
+  workOnHomeWork(): string {
+    return "Currently working";
+  }
+}
