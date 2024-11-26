@@ -36,7 +36,7 @@ module.exports = function countStudents(pathToFile) {
 
       Object.keys(fields).forEach((field) => {
         console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
-      });;
+      });
 
       // Resolve the Promise when done
       return resolve();
