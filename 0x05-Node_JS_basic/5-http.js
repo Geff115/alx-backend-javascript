@@ -25,7 +25,7 @@ const app = http.createServer((req, res) => {
     countStudents(database)
       .then((result) => {
         if (result) {
-            res.write(`${result}\n`);
+          res.write(`${result}\n`);
         }
         res.end();
       })
