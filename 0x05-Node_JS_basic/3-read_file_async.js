@@ -32,16 +32,14 @@ module.exports = function countStudents(pathToFile) {
       });
 
       // preparing the result string
-      let result = `Number of students: ${students.length}`;
+      console.log(`Number of students: ${students.length}`);
 
       Object.keys(fields).forEach((field) => {
-        result += `\nNumber of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`;
-      });
-
-      console.log(result);
+        console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
+      });;
 
       // Resolve the Promise when done
-      return resolve(result);
+      return resolve();
     });
   });
 };
